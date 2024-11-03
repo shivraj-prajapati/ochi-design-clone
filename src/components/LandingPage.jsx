@@ -1,6 +1,9 @@
+import { motion } from "framer-motion";
 import { GoArrowUpRight } from "react-icons/go";
 
 export default function LandingPage() {
+
+  motion
   return (
     <div className="w-full min-h-screen bg-[#F1F1F1] pt-1">
       {/* Main text structure */}
@@ -9,7 +12,7 @@ export default function LandingPage() {
           <div key={index} className="masker">
             <div className="w-fit flex items-center">
               {index === 1 && (
-                <div className="w-[20vw] h-[8vw] md:w-[9vw] md:h-[5vw] bg-green-500 rounded-md mr-3"></div>
+                <motion.div initial={{width: 0}} animate={{width: "8vw"}} transition={{ease: [0.76, 0, 0.24, 1], duration: 1}} className="w-[20vw] h-[8vw] md:w-[9vw] md:h-[5vw] bg-green-500 rounded-md mr-3"></motion.div>
               )}
               <h1 className="font-HeadingPro leading-[10vw] md:leading-[7.5vw] uppercase font-semibold text-[10vw] md:text-[6.5rem]">
                 {text}
