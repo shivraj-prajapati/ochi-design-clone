@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* src/index.css */
+@font-face {
+    font-family: 'Founders';
+    src: url('./fonts/Heading-Pro-Light-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
