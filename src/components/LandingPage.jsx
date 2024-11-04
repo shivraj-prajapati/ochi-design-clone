@@ -5,7 +5,7 @@ export default function LandingPage() {
 
   motion
   return (
-    <div className="w-full min-h-screen bg-[#F1F1F1] pt-1">
+    <div data-scroll data-scroll-speed="-.3" data-scroll-section className="w-full min-h-screen bg-[#F1F1F1] pt-1">
       {/* Main text structure */}
       <div className="textstructure mt-20 md:mt-36 px-5 md:px-20">
         {["We Create", "eye-opening", "presentations"].map((text, index) => (
