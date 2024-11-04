@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function Eyes() {
@@ -31,9 +32,10 @@ export default function Eyes() {
     };
   }, []);
 
+  motion
   return (
     <div className="eyes w-full h-screen overflow-hidden">
-      <div className="relative w-full bg-center bg-cover h-full bg-[url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-1440x921.jpg')]">
+      <div  data-scroll data-scroll-speed="-.6"  className="relative w-full bg-center bg-cover h-full bg-[url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-1440x921.jpg')]">
         <div className="absolute top-1/2 left-1/2 flex gap-10 -translate-x-1/2 -translate-y-1/2">
           
           {/* Left Eye */}
