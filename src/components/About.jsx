@@ -1,4 +1,7 @@
+import { motion } from "framer-motion";
+
 export default function About() {
+
   return (
     <div className="w-full bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl font-[#212121]">
       <div className="p-16">
